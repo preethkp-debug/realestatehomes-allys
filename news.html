@@ -8,6 +8,59 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
+<style>
+  .post {
+    max-width: 760px; margin: 0 auto; padding: 80px 24px;
+    border-top: 1px solid var(--line);
+  }
+  .post:first-of-type { border-top: none; }
+  .post-tag {
+    font-size: 11px; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 16px; font-weight: 600;
+  }
+  .post h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(32px, 4vw, 44px); font-weight: 400;
+    line-height: 1.15; letter-spacing: -0.01em;
+    margin-bottom: 14px;
+  }
+  .post h2 em { font-style: italic; color: var(--gold); font-weight: 300; }
+  .post-meta {
+    font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--muted); margin-bottom: 36px;
+  }
+  .post-lede {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; line-height: 1.55; font-weight: 400;
+    color: var(--ink); margin-bottom: 28px;
+    font-style: italic;
+  }
+  .post p { color: var(--ink); font-size: 16px; line-height: 1.85; margin-bottom: 18px; }
+  .post h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px; font-weight: 500; margin-top: 32px; margin-bottom: 14px;
+  }
+  .post ul { margin: 0 0 18px 24px; }
+  .post li { font-size: 16px; line-height: 1.8; margin-bottom: 8px; }
+  .post-pull {
+    border-left: 2px solid var(--gold);
+    padding-left: 24px; margin: 28px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px; line-height: 1.5; color: var(--ink); font-style: italic;
+  }
+  .post-photo {
+    margin: 0 -24px 40px; aspect-ratio: 16/9; overflow: hidden;
+  }
+  .post-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .post-back {
+    display: inline-block; margin-top: 32px;
+    font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--gold); font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .post-photo { margin-left: -24px; margin-right: -24px; }
+  }
+</style>
 </head>
 <body>
 
@@ -32,65 +85,244 @@
 <header class="page-head" style="--bg-img: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=2400&q=80');">
   <div class="crumb">Market Intelligence</div>
   <h1>News &amp; <em>insights</em></h1>
-  <p class="lead">Market reports, neighbourhood guides, and investor analysis — written by our research team.</p>
+  <p class="lead">Market reports, neighbourhood guides, and investor analysis — informed by what the UAE's most active real-estate communities are talking about right now.</p>
 </header>
 
 <div class="news-grid">
   <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80" alt="Dubai Market Report"></div>
+    <a href="#lease-outflow-q2-2026">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=900&q=80" alt="Dubai lease market"></div>
       <div class="article-tag">Market Report</div>
-      <h3 class="article-title">Dubai Q1 2026: Why prime residential is up 19% year-on-year</h3>
-      <p class="article-excerpt">An in-depth look at why luxury inventory continues to defy global trends, with Palm Jumeirah leading the appreciation curve.</p>
-      <div class="article-meta">8 min read · May 6, 2026</div>
+      <h3 class="article-title">The Q2 2026 tenant outflow: why Dubai's lease market just turned</h3>
+      <p class="article-excerpt">New leases haven't kept pace with expirations since March. The net outflow now stands at 60,000+ contracts — a swing of nearly 80,000 from this time last year.</p>
+      <div class="article-meta">6 min read · May 14, 2026</div>
     </a>
   </article>
   <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1542338347-4fff3276af78?w=900&q=80" alt="Off-Plan Guide"></div>
+    <a href="#sales-slowdown">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1542338347-4fff3276af78?w=900&q=80" alt="Off-plan sales"></div>
+      <div class="article-tag">Market Analysis</div>
+      <h3 class="article-title">When the off-plan story cools: making sense of the sales slowdown</h3>
+      <p class="article-excerpt">Sales volume has compressed sharply. The "high yield" narrative that powered the last cycle is being tested — and disciplined buyers are quietly winning.</p>
+      <div class="article-meta">7 min read · May 12, 2026</div>
+    </a>
+  </article>
+  <article class="article-card">
+    <a href="#dubai-abu-dhabi-corridor">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=900&q=80" alt="UAE corridor"></div>
+      <div class="article-tag">Long-Term Outlook</div>
+      <h3 class="article-title">The Dubai-Abu Dhabi corridor: how the 2028-2030 plan reshapes the map</h3>
+      <p class="article-excerpt">Look at the masterplans together and the picture is obvious. Two emirates are quietly building toward each other — and the middle is about to become the most interesting address in the country.</p>
+      <div class="article-meta">8 min read · May 9, 2026</div>
+    </a>
+  </article>
+  <article class="article-card">
+    <a href="#pre-deposit-checklist">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?w=900&q=80" alt="Buyer checklist"></div>
       <div class="article-tag">Investor Guide</div>
-      <h3 class="article-title">The 2026 off-plan handbook: what to ask before you sign</h3>
-      <p class="article-excerpt">From escrow protections to handover dates — a complete walkthrough for international buyers considering Dubai's launch market.</p>
-      <div class="article-meta">12 min read · May 2, 2026</div>
+      <h3 class="article-title">Six months in Dubai property: what nobody tells you before you wire the deposit</h3>
+      <p class="article-excerpt">EOI cheques cashed against your wishes. Service charges twice what the agent quoted. Floorplans that don't match the unit. A field-tested checklist for international buyers.</p>
+      <div class="article-meta">9 min read · May 7, 2026</div>
     </a>
   </article>
   <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?w=900&q=80" alt="Saadiyat Island"></div>
-      <div class="article-tag">Neighbourhood Guide</div>
-      <h3 class="article-title">Saadiyat Island has quietly become the UAE's most desirable address</h3>
-      <p class="article-excerpt">With the Guggenheim opening this year and beachfront villa supply tightening, the case for Saadiyat keeps strengthening.</p>
-      <div class="article-meta">6 min read · April 28, 2026</div>
+    <a href="#service-charges">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900&q=80" alt="Service charges"></div>
+      <div class="article-tag">Ownership</div>
+      <h3 class="article-title">The service charge reality check every UAE owner needs to read</h3>
+      <p class="article-excerpt">The headline price is the easy part. The annual cost of holding a unit is where surprises live — and where developer brochures tend to go quiet.</p>
+      <div class="article-meta">5 min read · May 4, 2026</div>
     </a>
   </article>
   <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=900&q=80" alt="Branded Residences"></div>
-      <div class="article-tag">Industry Trend</div>
-      <h3 class="article-title">Branded residences now command a 32% premium across Dubai</h3>
-      <p class="article-excerpt">Bulgari, Six Senses, Wynn — why hotel-managed homes are reshaping the top end of the UAE market.</p>
-      <div class="article-meta">9 min read · April 22, 2026</div>
-    </a>
-  </article>
-  <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80" alt="Golden Visa"></div>
-      <div class="article-tag">Regulation</div>
-      <h3 class="article-title">Golden Visa updates: what's changed for property investors in 2026</h3>
-      <p class="article-excerpt">The new AED 2M threshold, fractional ownership eligibility, and the dependents framework explained in plain English.</p>
-      <div class="article-meta">7 min read · April 18, 2026</div>
-    </a>
-  </article>
-  <article class="article-card">
-    <a href="#">
-      <div class="article-img"><img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=900&q=80" alt="Ras Al Khaimah"></div>
-      <div class="article-tag">Emerging Market</div>
-      <h3 class="article-title">Ras Al Khaimah is the next decade's Dubai. Here's the data.</h3>
-      <p class="article-excerpt">Tourism numbers, infrastructure spend, and the Wynn integrated resort — RAK's transformation is just beginning.</p>
-      <div class="article-meta">10 min read · April 11, 2026</div>
+    <a href="#villa-kitchens">
+      <div class="article-img"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=900&q=80" alt="UAE villa"></div>
+      <div class="article-tag">Design</div>
+      <h3 class="article-title">The villa kitchen question: why layout matters more than square footage</h3>
+      <p class="article-excerpt">You can spend AED 8M on a six-bedroom villa and still end up with a kitchen that was clearly designed by someone who has never cooked for a family of five.</p>
+      <div class="article-meta">4 min read · April 30, 2026</div>
     </a>
   </article>
 </div>
+
+<!-- ============ FULL ARTICLES ============ -->
+
+<article class="post" id="lease-outflow-q2-2026">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1600&q=80" alt="Dubai lease market"></div>
+  <div class="post-tag">Market Report</div>
+  <h2>The Q2 2026 tenant outflow: why Dubai's <em>lease market</em> just turned</h2>
+  <div class="post-meta">6 min read · May 14, 2026 · Research Desk</div>
+
+  <p class="post-lede">In the ten weeks between March 1 and May 4, more leases expired in Dubai than were newly executed. The net outflow now sits north of sixty thousand contracts — a number the city hasn't seen in this direction since late 2023.</p>
+
+  <p>For most of the last cycle, Dubai's residential market was carried by a single arithmetic: more people arriving than leaving. New visa categories, an end to remote-work uncertainty, and a steady inflow of professionals from Russia, Europe, and India kept the lease-to-expiry ratio firmly positive. Twelve months ago, in the same March-to-May window, Dubai registered a net surplus of nearly twenty thousand contracts. This year, that ratio has inverted — and the surplus has flipped to a deficit nearly four times larger.</p>
+
+  <h3>What the numbers actually say</h3>
+
+  <p>The headline figure — a forty percent contraction in cumulative lease volume since February — sounds catastrophic in isolation. Read in context, it is more nuanced. Volume contractions of this scale almost always coincide with handover waves, when fresh inventory adjusts rents across whole communities and existing tenants either renegotiate or move. The current pullback overlaps with one of the largest delivery quarters Dubai has scheduled since 2018.</p>
+
+  <p>The signal worth tracking is not the volume itself but the direction. When expirations outpace renewals, asking rents soften within ninety to one hundred and twenty days. Communities with significant 2026 handover exposure — JVC, Dubai South, parts of Business Bay — are the first to feel it. Established locations with constrained supply tend to lag the move by a quarter or two.</p>
+
+  <div class="post-pull">For end-users buying now, this is the most negotiable market we've seen in three years. For investors holding rental units, the next two quarters will reward those who price for occupancy rather than yield.</div>
+
+  <h3>What we're advising clients</h3>
+
+  <p>Owners with units coming up for renewal should not anchor to last year's number. The realistic strategy is a small renewal discount in exchange for a longer commitment — a six percent reduction on a two-year contract beats an empty unit for three months. Cash flow matters more than the headline.</p>
+
+  <p>Buyers with cash on hand should treat the next two quarters as a window. Sellers carrying multiple units, particularly those with mortgages priced at last year's rate environment, are increasingly motivated. We've seen genuine discounts of eight to twelve percent on units listed for over ninety days — discounts that did not exist this time last year.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
+
+<article class="post" id="sales-slowdown">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1542338347-4fff3276af78?w=1600&q=80" alt="Off-plan sales"></div>
+  <div class="post-tag">Market Analysis</div>
+  <h2>When the off-plan story cools: making sense of the <em>sales slowdown</em></h2>
+  <div class="post-meta">7 min read · May 12, 2026 · Investment Team</div>
+
+  <p class="post-lede">For two years the off-plan pitch was simple — eight to twelve percent net yield, capital growth on top, payment plans that did half the financing for you. The pitch is being stress-tested. Disciplined buyers are quietly winning.</p>
+
+  <p>Sales volume has compressed sharply across the major launch districts. The "high rental yield" narrative that powered launches through 2024 and most of 2025 was always conditional on three things holding up at once: short-term occupancy, tourist arrivals, and corporate relocation flow. All three softened in the same quarter. The result is a market that is still functioning but no longer flattering every project equally.</p>
+
+  <h3>Why "guaranteed yield" claims need a second read</h3>
+
+  <p>When a developer commits to a guaranteed return for the first one to three years of ownership, the commitment is real — but the funding is not magic. It is paid out of margin baked into the purchase price. A unit sold at AED 2.4M with a three-year, 8% guaranteed yield has roughly AED 576,000 of forward rental commitment built in. If actual rents during that period sit closer to 5%, the developer absorbs the gap. If multiple developers face that scenario at the same time, the market starts asking which projects can carry the commitment all the way through to year three.</p>
+
+  <p>None of this is hypothetical. The Dubai market is heavily state-supported, and significant stress would be addressed at the system level before it became visible at the individual project. But the rational position for a buyer is to treat assured-yield headlines as a starting question, not a closing argument.</p>
+
+  <h3>The questions to ask before signing</h3>
+
+  <ul>
+    <li>What is the actual annualised rent for comparable units in the same community right now — not the forecast?</li>
+    <li>How is the guaranteed yield being funded? Is it contractual or marketing language?</li>
+    <li>What is the developer's recent delivery record on similar projects — on time, on spec?</li>
+    <li>If the assured-yield period ends and the market rent is lower, what is your hold strategy?</li>
+  </ul>
+
+  <p>The market is not broken. It is reverting to a more normal relationship between price, rent, and risk. Buyers who go in with their eyes open will be very well rewarded over the next cycle. Buyers who don't will discover that "guaranteed" is a contractual word, not an economic one.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
+
+<article class="post" id="dubai-abu-dhabi-corridor">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1518684079-3c830dcef090?w=1600&q=80" alt="UAE corridor"></div>
+  <div class="post-tag">Long-Term Outlook</div>
+  <h2>The Dubai-Abu Dhabi corridor: how the <em>2028-2030 plan</em> reshapes the map</h2>
+  <div class="post-meta">8 min read · May 9, 2026 · Investment Team</div>
+
+  <p class="post-lede">For thirty years, Dubai and Abu Dhabi were two cities with a motorway between them. By 2030, the motorway will be a connector, not a divider. The middle ground — once defined by the airport and a stretch of desert — is becoming an address class of its own.</p>
+
+  <p>Look at the next four years of masterplan completions together rather than separately and a single thesis emerges. Dubai is building south. Abu Dhabi is building north. Both have pushed major handovers into the same handful of pin-codes between 2026 and 2030. The "gap" between the two emirates is closing in real time.</p>
+
+  <h3>The completion calendar</h3>
+
+  <p>Anchoring Dubai's southern expansion is Palm Jebel Ali's Phase 1 handover, the new Hayat communities in Dubai South, and a wave of branded townhomes along the Sheikh Zayed Road south corridor. On the Abu Dhabi side, ultra-prime developments around Saadiyat, Al Reem, and Ghantoot are taking the capital's high-end inventory north along the same arterial.</p>
+
+  <p>The infrastructure tells the same story. The Etihad Rail passenger link, the upgraded Hessa Street corridor, and the expansion of the southern Sheikh Zayed Road interchange are all timed to be operational in the same window. None of these are real-estate projects. All of them change the calculus of where a UAE-based family can rationally live.</p>
+
+  <div class="post-pull">By 2030 the question is no longer "Dubai or Abu Dhabi." The question is which side of the new corridor your address sits on.</div>
+
+  <h3>Investment implications</h3>
+
+  <p>The simplest implication: land or off-plan exposure in the southern Dubai / northern Abu Dhabi catchment is the long-duration trade of this cycle. The pricing today still reflects an old map. The pricing in 2030 will reflect the new one.</p>
+
+  <p>The second implication is more subtle. Communities currently considered "remote" by Dubai standards — Dubai South, Palm Jebel Ali, parts of Jebel Ali Village — are about to enjoy a structural re-rating not because of anything they did, but because of where the rest of the country is heading. The same is true on the Abu Dhabi side. Buyers who recognise the corridor effect and act before 2027 will, in our view, see meaningful capital appreciation independent of broader market direction.</p>
+
+  <p>None of this requires the market to roar back. It only requires the masterplan to land on schedule, which — across both emirates — is what consistently happens.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
+
+<article class="post" id="pre-deposit-checklist">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1551776235-dde6d4829808?w=1600&q=80" alt="Pre-deposit checklist"></div>
+  <div class="post-tag">Investor Guide</div>
+  <h2>Six months in Dubai property: what nobody tells you before you <em>wire the deposit</em></h2>
+  <div class="post-meta">9 min read · May 7, 2026 · Buyer Advisory</div>
+
+  <p class="post-lede">The brochure version of a Dubai purchase is clean. The reality version has texture. Here are the friction points the brochure leaves out — and what to do about each one before you sign.</p>
+
+  <h3>The EOI cheque is not a deposit. Until it is.</h3>
+
+  <p>At a launch event you will be asked to write an Expression of Interest cheque, typically AED 50,000 to AED 100,000. It is presented as refundable, "just to hold a unit," "we won't even cash it." A growing number of real cases show those cheques being submitted to the bank within days when the buyer pulls back. The cheque is a banking instrument the moment it leaves your hand. If you wouldn't sign a cheque for the amount today, don't sign one tomorrow either.</p>
+
+  <p>If you must hold a unit at a launch, write the EOI as a manager's cheque made out to the developer's escrow account, never to the agent or developer's operating account. And get the refund terms in email before you write it.</p>
+
+  <h3>Service charges are the real second number</h3>
+
+  <p>The headline price is one number. The annual carry cost is the second. Service charges of AED 18 to AED 30 per sq ft per year are normal for premium buildings, and they are revisited every year by the owners' association. A AED 3M apartment with 1,800 sq ft and a AED 25/sq ft service charge costs you AED 45,000 per year just to hold — before insurance, mortgage, or DEWA. Get the last three years of the service-charge history from the developer or the existing owners before you commit.</p>
+
+  <h3>The unit you tour is not the unit you receive</h3>
+
+  <p>Show units are usually upgraded beyond standard handover spec. Floor finishes, kitchen appliances, fitted wardrobes, sometimes even ceiling height differ. Ask for the technical specification document, in writing, with model numbers for every visible finish. If the developer won't provide it, that is the answer.</p>
+
+  <h3>Mortgages: the LTV ratio is not the rule that binds you</h3>
+
+  <p>UAE mortgage rules limit loan-to-value to 80% for first-time buyers on properties under AED 5M. The harder constraint, in practice, is debt-to-income — your total monthly debt obligations must stay under 50% of your stable monthly income. Get a written pre-approval before you commit to a unit, not after. Pre-approval is free; failing to close on an off-plan commitment is not.</p>
+
+  <h3>The friendly agent is not your fiduciary</h3>
+
+  <p>Agents in the UAE are not legally required to act in the buyer's interest. They represent the seller or the developer. This is not a critique — it is how the market is structured. The implication: independent legal review of any off-plan SPA, before signing, is worth more than the legal fee. AED 5,000 to AED 8,000 to read a contract is small money against a multi-million dirham commitment.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
+
+<article class="post" id="service-charges">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=1600&q=80" alt="Service charges"></div>
+  <div class="post-tag">Ownership</div>
+  <h2>The <em>service charge</em> reality check every UAE owner needs to read</h2>
+  <div class="post-meta">5 min read · May 4, 2026 · Ownership Desk</div>
+
+  <p class="post-lede">The headline price is the easy part. The annual cost of holding a unit — service charges, master community fees, chiller, insurance — is where the surprises live. And it is the part developer marketing tends to skim past.</p>
+
+  <p>Service charges are the fees an owner pays each year to the building's owners' association to cover common-area maintenance, security, cleaning, pool, gym, lifts, façade, and management. They are governed by RERA in Dubai and the equivalent regulator in each emirate, and they are reviewed and approved annually. They are normal. They are not the same as a single number on a developer's promotional sheet.</p>
+
+  <h3>What "normal" looks like</h3>
+
+  <ul>
+    <li><strong>Mid-range apartments:</strong> AED 10 to AED 18 per sq ft per year.</li>
+    <li><strong>Premium apartments (Marina, Downtown, Palm):</strong> AED 18 to AED 30 per sq ft per year.</li>
+    <li><strong>Branded residences (Bulgari, Six Senses, Atlantis):</strong> AED 35 to AED 80 per sq ft per year.</li>
+    <li><strong>Villas in master communities:</strong> AED 3 to AED 6 per sq ft per year on built-up area, plus a master community fee.</li>
+  </ul>
+
+  <p>Multiply the rate by the unit's chargeable area, not the saleable area. For a 1,800 sq ft Marina apartment at AED 20 per sq ft, that is AED 36,000 every year. For a 6,000 sq ft Palm villa at AED 5 per sq ft on built-up plus master fee, you are likely at AED 45,000 to AED 60,000 per year. None of this includes DEWA, cooling, or insurance.</p>
+
+  <h3>The questions to ask before you buy</h3>
+
+  <ul>
+    <li>What was the actual service charge per square foot in each of the last three years?</li>
+    <li>Are there outstanding capital projects (facade, lift replacement, chiller overhaul) that the owners' association is reserving for?</li>
+    <li>Is the building's reserve fund healthy, or has it been drawn down to cover operating shortfalls?</li>
+    <li>What percentage of owners are in arrears? Above 15% is a yellow flag; above 25% is a red one.</li>
+  </ul>
+
+  <p>A well-managed building with predictable charges is a quiet pleasure to own. A poorly-managed building with rising charges and a thin reserve fund is a slow leak in your investment. The questions above take a single email to ask, and the answers tell you which one you're buying.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
+
+<article class="post" id="villa-kitchens">
+  <div class="post-photo"><img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1600&q=80" alt="UAE villa"></div>
+  <div class="post-tag">Design</div>
+  <h2>The villa kitchen question: why <em>layout</em> matters more than square footage</h2>
+  <div class="post-meta">4 min read · April 30, 2026 · Design Desk</div>
+
+  <p class="post-lede">You can spend AED 8M on a six-bedroom villa and find that the kitchen has one wall of cabinets, room for a four-burner stove, a medium fridge, and nothing else. It is one of the most consistent buyer complaints in the UAE market — and most of it is fixable, if you know to ask before you sign.</p>
+
+  <p>Standard handover specifications in the UAE are calibrated for a certain assumed lifestyle: small household, frequent dining out, light home cooking, staff handling the heavy preparation in a separate utility area. For a buyer arriving from a market where the kitchen is the household's centre of gravity, the spec lands somewhere between charming and inadequate.</p>
+
+  <h3>What's actually going on</h3>
+
+  <p>Most large UAE villas are designed with a two-kitchen logic: a "show" kitchen visible from the living area, and a "back" or wet kitchen — sometimes called the chef's kitchen or maid's kitchen — where the actual cooking happens. The show kitchen is often what shocks buyers at handover. It looks like a kitchen but functions like a coffee bar. The wet kitchen, often tucked behind the laundry or adjacent to the maid's room, is where you'll need to spend most of your renovation budget.</p>
+
+  <p>For families coming from European, American, or East Asian housing markets, this layout is unfamiliar. Either you adapt to it, or you renovate. Both are valid. Neither is obvious from the brochure.</p>
+
+  <h3>Three questions to ask before you sign</h3>
+
+  <ul>
+    <li>Is there a wet kitchen or back-of-house cooking area? Where is it on the floorplan?</li>
+    <li>What is the actual square footage of the cooking and prep zone — not the dining-adjacent show kitchen?</li>
+    <li>Can the wet kitchen be expanded into the laundry space, or are the gas, water, and ventilation runs fixed at handover?</li>
+  </ul>
+
+  <p>The fix is rarely impossible. A AED 200,000 to AED 400,000 budget will turn a marginal kitchen into one that suits a real household. Just price it into the deal from day one rather than discovering it three months after handover.</p>
+  <a href="#" class="post-back">← Back to top</a>
+</article>
 
 <section class="cta">
   <div class="section-head">
@@ -98,7 +330,7 @@
     <p class="section-sub">One email a month with the data, deals, and movements you need to know.</p>
   </div>
   <div class="cta-buttons">
-    <a href="/contact.html" class="cta-btn cta-btn-primary">Subscribe</a>
+    <a href="/contact.html" class="cta-btn-cta-btn-primary">Subscribe</a>
   </div>
 </section>
 
